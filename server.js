@@ -8,7 +8,7 @@ require('dotenv').config();
 
 const app = express();
 app.use(cors({
-  origin: ['https://kuwait-saloons.netlify.app', 'http://localhost:3000', 'https://localhost:3000'],
+  origin: ['https://kuwait-saloons.netlify.app', 'https://*.netlify.app', 'http://localhost:3000'],
   credentials: true
 }));
 app.use(express.json());
